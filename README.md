@@ -9,7 +9,6 @@ This project conducts a comprehensive exploratory data analysis of Netflix conte
 - [Methodology](#methodology)
 - [Insights](#insights)
 - [Conclusion](#conclusion)
-- [How to Run](#how-to-run)
 
 ## Introduction
 
