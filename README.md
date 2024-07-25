@@ -23,11 +23,10 @@ The data used in this analysis comes from the publicly available Netflix dataset
 
 1. **Data Cleaning**: 
    - Removed unnecessary columns and handled missing values.
+   - Fixed data types (e.g., converted date columns to datetime format, split duration into separate columns for seasons and minutes).
+   - Generated a new feature indicating the time until content was added to Netflix (calculated as the difference between the release year and the year added to Netflix).
    
-2. **Feature Generation**:
-   - Created new features such as whether a title is a holiday week, days left until major holidays, etc.
-   
-3. **Exploratory Data Analysis (EDA)**:
+2. **Exploratory Data Analysis (EDA)**:
    - Visualized the distribution of various attributes using histograms, bar charts, line charts, and pie charts.
    - Created word clouds to highlight the most frequent words in content descriptions.
 
@@ -37,7 +36,7 @@ The insights folder contains various visualizations generated during the analysi
 
 1. **Ratio Between Movies and TV Shows**:
    ![Ratio Between Movies and TV Shows](assets/newplot.png)
-   - This bar chart shows the ratio of movies to TV shows available on Netflix.
+   - This pie chart shows the ratio of movies to TV shows available on Netflix.
 
 2. **Top 20 Contributing Countries**:
    ![Top 20 Contributing Countries](assets/top20country.png)
@@ -65,11 +64,11 @@ The insights folder contains various visualizations generated during the analysi
 
 8. **Distribution for Number of Minutes for Movies**:
    ![Distribution for Number of Minutes for Movies](assets/moviemins.png)
-   - A histogram showing the distribution of movie durations in minutes.
+   - A violin plot showing the distribution of movie durations in minutes.
 
 9. **Distribution for Number of Seasons for TV Shows**:
    ![Distribution for Number of Seasons for TV Shows](assets/tvseasons.png)
-   - A histogram displaying the distribution of the number of seasons for TV shows.
+   - A violin plot displaying the distribution of the number of seasons for TV shows.
 
 10. **Pie Chart for Movie/Shows Ratings**:
     ![Ratings Distribution](assets/pieRating.png)
